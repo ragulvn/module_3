@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Bootstrap Layout</title>
+    <!-- Include Bootstrap CSS file -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        /* Customize additional styles here if needed */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            margin-bottom: 20px; /* Add margin to separate navbar from content */
+        }
+
+        .page-heading {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .tall-section {
+            height: 1000px; /* Adjust the height as needed */
+            background-color: #f2f2f2; /* Set a background color to distinguish it */
+            padding: 20px; /* Add padding as needed */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Company name on desktop and tablet views -->
+            <div class="navbar-header visible-md visible-sm">
+                <a class="navbar-brand" href="#">Food, LLC</a>
+            </div>
+            <!-- Mobile view menu button -->
+            <div class="navbar-header visible-xs">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mobile-menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Food, LLC</a>
+            </div>
+            <!-- Mobile view dropdown menu -->
+            <div class="collapse navbar-collapse" id="mobile-menu">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Chicken</a></li>
+                    <li><a href="#">Beef</a></li>
+                    <li><a href="#">Sushi</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Heading -->
+    <div class="page-heading">
+        <h1>Our Menu</h1>
+    </div>
+
+    <!-- Tall Section with Bootstrap Grid -->
+    <div class="container-fluid tall-section">
+        <div class="row">
+            <!-- Bootstrap Grid Column for all views -->
+            <div class="col-xs-12">
+                <!-- Content goes here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
 
